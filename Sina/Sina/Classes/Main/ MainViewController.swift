@@ -13,11 +13,26 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 添加自控制器
-        addChildControllers("HomeTableViewController",image:  "tabbar_home", title: "首页")
-        addChildControllers("MessageViewController", image: "tabbar_message_center", title: "消息")
-        addChildControllers("DiscoverViewController", image: "tabbar_discover", title: "发现")
-        addChildControllers("ProfileViewController", image: "tabbar_profile", title: "我")
+        // 1.加载 JSON 数据
+        let path = NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil)!
+        let data = NSData(contentsOfFile: path)!
+        
+        guard let objc = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) else
+        {
+            LQYLog("没有 JSON 数据")
+            // 添加自控制器
+            addChildControllers("HomeViewController",image:  "tabbar_home", title: "首页")
+            addChildControllers("MessageViewController", image: "tabbar_message_center", title: "消息")
+            addChildControllers("DiscoverViewController", image: "tabbar_discover", title: "发现")
+            addChildControllers("ProfileViewController", image: "tabbar_profile", title: "我")
+            return
+        }
+        
+        // 2.根据json文件返回的数据加载控制器
+        for dict in objc as! [[String : AnyObject]]
+        {
+            addChildControllers(dict["vcName"] as! String, image:dict["imageName"] as! String , title: dict["title"] as! String)
+        }
         
     }
     
@@ -33,13 +48,13 @@ class MainViewController: UITabBarController {
         
         // 1.通过字符串创建一个类
         // 在 Swift 中, 如果向通过一个AnyClass来创建一个对象, 必须先明确这个类的类型
-        let cls: AnyClass? = NSClassFromString(nsp + "." + childControllerName)
+        let cls: AnyClass? = NSClassFromString( nsp + "." + childControllerName)
         
         // 2.通过 class 创建一个类
         // 在Swift中如果向通过一个AnyClass来创建一个对象, 必须先明确这个类的类型
         guard let vcCls = cls as? UITableViewController.Type else
         {
-            LQYLog("没有获得命名空间")
+            LQYLog("AnyClass没有值")
             return
         }
         let childController = vcCls.init()

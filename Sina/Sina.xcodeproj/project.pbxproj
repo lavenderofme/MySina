@@ -11,11 +11,12 @@
 		8B7827DF1BEC637500A0C827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7827DE1BEC637500A0C827 /* Assets.xcassets */; };
 		8B7827ED1BEC637500A0C827 /* SinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7827EC1BEC637500A0C827 /* SinaTests.swift */; };
 		8B7827F81BEC637500A0C827 /* SinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7827F71BEC637500A0C827 /* SinaUITests.swift */; };
-		8BD3A57C1BED8A1F008CC6A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57B1BED8A1F008CC6A5 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8BD3A57E1BED8A37008CC6A5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57D1BED8A37008CC6A5 /* HomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8BD3A57C1BED8A1F008CC6A5 /*  MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8BD3A57E1BED8A37008CC6A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A5821BED8A5E008CC6A5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A5811BED8A5E008CC6A5 /* MessageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A5841BED8A68008CC6A5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A5831BED8A68008CC6A5 /* DiscoverViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A5861BED8A82008CC6A5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A5851BED8A82008CC6A5 /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8BD3A5891BEDA254008CC6A5 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3A5881BEDA254008CC6A5 /* MainVCSettings.json */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +47,12 @@
 		8B7827F31BEC637500A0C827 /* SinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7827F71BEC637500A0C827 /* SinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinaUITests.swift; sourceTree = "<group>"; };
 		8B7827F91BEC637500A0C827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BD3A57B1BED8A1F008CC6A5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		8BD3A57D1BED8A37008CC6A5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " MainViewController.swift"; sourceTree = "<group>"; };
+		8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8BD3A5811BED8A5E008CC6A5 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		8BD3A5831BED8A68008CC6A5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		8BD3A5851BED8A82008CC6A5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8BD3A5881BEDA254008CC6A5 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +153,7 @@
 		8BD3A5761BED8984008CC6A5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8BD3A57D1BED8A37008CC6A5 /* HomeTableViewController.swift */,
+				8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -159,7 +161,8 @@
 		8BD3A5771BED8984008CC6A5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				8BD3A57B1BED8A1F008CC6A5 /* MainViewController.swift */,
+				8BD3A5871BEDA241008CC6A5 /* Resource */,
+				8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -185,6 +188,14 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		8BD3A5871BEDA241008CC6A5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8BD3A5881BEDA254008CC6A5 /* MainVCSettings.json */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD3A5891BEDA254008CC6A5 /* MainVCSettings.json in Resources */,
 				8B7827DF1BEC637500A0C827 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,10 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD3A5861BED8A82008CC6A5 /* ProfileViewController.swift in Sources */,
-				8BD3A57E1BED8A37008CC6A5 /* HomeTableViewController.swift in Sources */,
+				8BD3A57E1BED8A37008CC6A5 /* HomeViewController.swift in Sources */,
 				8B7827D81BEC637500A0C827 /* AppDelegate.swift in Sources */,
 				8BD3A5821BED8A5E008CC6A5 /* MessageViewController.swift in Sources */,
-				8BD3A57C1BED8A1F008CC6A5 /* MainViewController.swift in Sources */,
+				8BD3A57C1BED8A1F008CC6A5 /*  MainViewController.swift in Sources */,
 				8BD3A5841BED8A68008CC6A5 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
