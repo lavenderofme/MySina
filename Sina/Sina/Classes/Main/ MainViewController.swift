@@ -17,6 +17,14 @@ class MainViewController: UITabBarController {
         let path = NSBundle.mainBundle().pathForResource("MainVCSettings.json", ofType: nil)!
         let data = NSData(contentsOfFile: path)!
         
+        /* throws是XCode7最大的变化, 异常处理机制
+           1.do catch的作用: 一旦方法抛出异常, 那么就会执行catch后面{}中的内容, 如果没有抛出异常, 那么catch后面{}中的内容不执行
+                1.try : 正常处理异常, 一旦有异常就执行catch
+                2.try!: 强制处理异常(忽略异常),也就是说告诉系统一定不会发生异常, 如果真的发生了异常, 那么程序会崩溃
+                3.try?: 忽略异常, 告诉系统可能有异常也可能没有异常, 如果发生异常返回值就是nil, 如果没有发生异常, 会将返回值包装为一个可选类型的值
+           2.开发中推举使用try? 和 try , 不推荐使用try!
+        */
+
         guard let objc = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) else
         {
             LQYLog("没有 JSON 数据")

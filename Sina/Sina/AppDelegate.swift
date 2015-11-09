@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 全局有效的设置一般在程序一启动就设置,否则不知道何时有效,一般在 AppDelegate中设置
         UITabBar.appearance().tintColor = UIColor.orangeColor()
         
-        // 1.创建窗口
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        // 2.设置窗口根控制器
-        window?.rootViewController = MainViewController()
-        // 3.显示窗口
-        window?.makeKeyAndVisible()
+//        // 1.创建窗口
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        // 2.设置窗口根控制器
+//        window?.rootViewController = MainViewController()
+//        // 3.显示窗口
+//        window?.makeKeyAndVisible()
         
         return true
     }
