@@ -11,6 +11,7 @@
 		8B7827DF1BEC637500A0C827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7827DE1BEC637500A0C827 /* Assets.xcassets */; };
 		8B7827ED1BEC637500A0C827 /* SinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7827EC1BEC637500A0C827 /* SinaTests.swift */; };
 		8B7827F81BEC637500A0C827 /* SinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7827F71BEC637500A0C827 /* SinaUITests.swift */; };
+		8B95DE441BF06CDE00CFB748 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A57C1BED8A1F008CC6A5 /*  MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A57E1BED8A37008CC6A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A5821BED8A5E008CC6A5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A5811BED8A5E008CC6A5 /* MessageViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -54,6 +55,7 @@
 		8B7827F31BEC637500A0C827 /* SinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7827F71BEC637500A0C827 /* SinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinaUITests.swift; sourceTree = "<group>"; };
 		8B7827F91BEC637500A0C827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "../Main/UIButton+Extension.swift"; sourceTree = "<group>"; };
 		8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " MainViewController.swift"; sourceTree = "<group>"; };
 		8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8BD3A5811BED8A5E008CC6A5 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD3A5741BED8984008CC6A5 /* Classes */,
+				8B95DE451BF06D1100CFB748 /* Tools */,
 				8B7827D71BEC637500A0C827 /* AppDelegate.swift */,
 				8B7827DE1BEC637500A0C827 /* Assets.xcassets */,
 				8B7827E31BEC637500A0C827 /* Info.plist */,
@@ -143,6 +146,15 @@
 			path = SinaUITests;
 			sourceTree = "<group>";
 		};
+		8B95DE451BF06D1100CFB748 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */,
+			);
+			name = Tools;
+			path = Classes/Tools;
+			sourceTree = "<group>";
+		};
 		8BD3A5741BED8984008CC6A5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +163,6 @@
 				8BD3A5781BED8984008CC6A5 /* Message */,
 				8BD3A5751BED8984008CC6A5 /* Discover */,
 				8BD3A5791BED8984008CC6A5 /* Profile */,
-				8BD3A57A1BED8984008CC6A5 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -200,13 +211,6 @@
 				8BD3A5941BEDAF68008CC6A5 /* Profile.storyboard */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		8BD3A57A1BED8984008CC6A5 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		8BD3A5871BEDA241008CC6A5 /* Resource */ = {
@@ -359,6 +363,7 @@
 				8B7827D81BEC637500A0C827 /* AppDelegate.swift in Sources */,
 				8BD3A5821BED8A5E008CC6A5 /* MessageViewController.swift in Sources */,
 				8BD3A57C1BED8A1F008CC6A5 /*  MainViewController.swift in Sources */,
+				8B95DE441BF06CDE00CFB748 /* UIButton+Extension.swift in Sources */,
 				8BD3A5841BED8A68008CC6A5 /* DiscoverViewController.swift in Sources */,
 				8BF683631BF05E000028BF19 /* NullViewController.swift in Sources */,
 			);

@@ -29,7 +29,7 @@ class MainViewController: UITabBarController {
     }
     
     // MARK: - 内部控制方法
-    func btnClick()
+    func composeButtonClick()
     {
         LQYLog("")
         
@@ -38,17 +38,9 @@ class MainViewController: UITabBarController {
    
     // MARK: - 懒加载
     private lazy var composeButton: UIButton = {
-        
-        let btn = UIButton()
-        btn.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: UIControlState.Normal)
-        btn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
-        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
-        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
-        
-        btn.addTarget(self, action: Selector("btnClick"), forControlEvents: UIControlEvents.TouchUpInside)
-        
-        btn.sizeToFit()
+        let btn = UIButton(imageNamed: "tabbar_compose_icon_add", backgroundImage: "tabbar_compose_button")
+        btn.addTarget(self, action: Selector("composeButtonClick"), forControlEvents: UIControlEvents.TouchUpInside)
         return btn
-        
+    
     }()
 }
