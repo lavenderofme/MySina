@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // 全局有效的设置一般在程序一启动就设置,否则不知道何时有效,一般在 AppDelegate中设置
         UITabBar.appearance().tintColor = UIColor.orangeColor()
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         /*
         // 1.创建窗口
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
