@@ -29,6 +29,7 @@
 		8BF683671BF05FF00028BF19 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF683661BF05FF00028BF19 /* Null.storyboard */; settings = {ASSET_TAGS = (); }; };
 		8BF69D381BF2D064000F269E /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF69D371BF2D064000F269E /* VisitorView.xib */; settings = {ASSET_TAGS = (); }; };
 		8BF69D3A1BF2D530000F269E /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF69D391BF2D530000F269E /* UIBarButtonItem+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		8BF69D3C1BF2DB12000F269E /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF69D3B1BF2DB12000F269E /* TitleButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8BF683661BF05FF00028BF19 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
 		8BF69D371BF2D064000F269E /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		8BF69D391BF2D530000F269E /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		8BF69D3B1BF2DB12000F269E /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */,
 				8BF69D391BF2D530000F269E /* UIBarButtonItem+Extension.swift */,
+				8BF69D3B1BF2DB12000F269E /* TitleButton.swift */,
 			);
 			name = Tools;
 			path = Classes/Tools;
@@ -381,6 +384,7 @@
 				8B95DE441BF06CDE00CFB748 /* UIButton+Extension.swift in Sources */,
 				8B7DB7CC1BF0C6E800F79C30 /* VisitorView.swift in Sources */,
 				8BD3A5841BED8A68008CC6A5 /* DiscoverViewController.swift in Sources */,
+				8BF69D3C1BF2DB12000F269E /* TitleButton.swift in Sources */,
 				8BF683631BF05E000028BF19 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
