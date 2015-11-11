@@ -14,6 +14,8 @@
 		8B7DB7CC1BF0C6E800F79C30 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DB7CB1BF0C6E800F79C30 /* VisitorView.swift */; settings = {ASSET_TAGS = (); }; };
 		8B7DB7CE1BF0C70500F79C30 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DB7CD1BF0C70500F79C30 /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8B88D5771BF330C4005CFAF5 /* LQYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88D5761BF330C4005CFAF5 /* LQYPresentationController.swift */; settings = {ASSET_TAGS = (); }; };
+		8B88D5791BF352BE005CFAF5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88D5781BF352BE005CFAF5 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
+		8B88D57B1BF353B4005CFAF5 /* PopoverAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B88D57A1BF353B4005CFAF5 /* PopoverAnimationManager.swift */; settings = {ASSET_TAGS = (); }; };
 		8B95DE441BF06CDE00CFB748 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A57C1BED8A1F008CC6A5 /*  MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A57E1BED8A37008CC6A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -66,6 +68,8 @@
 		8B7DB7CB1BF0C6E800F79C30 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		8B7DB7CD1BF0C70500F79C30 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8B88D5761BF330C4005CFAF5 /* LQYPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQYPresentationController.swift; sourceTree = "<group>"; };
+		8B88D5781BF352BE005CFAF5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8B88D57A1BF353B4005CFAF5 /* PopoverAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimationManager.swift; sourceTree = "<group>"; };
 		8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "../Main/UIButton+Extension.swift"; sourceTree = "<group>"; };
 		8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " MainViewController.swift"; sourceTree = "<group>"; };
 		8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				8BF69D411BF2E5FF000F269E /* PopoverViewController.swift */,
 				8BF69D3F1BF2E5E7000F269E /* PopoverViewController.storyboard */,
 				8B88D5761BF330C4005CFAF5 /* LQYPresentationController.swift */,
+				8B88D57A1BF353B4005CFAF5 /* PopoverAnimationManager.swift */,
 			);
 			name = Popover;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */,
 				8BF69D391BF2D530000F269E /* UIBarButtonItem+Extension.swift */,
 				8BF69D3B1BF2DB12000F269E /* TitleButton.swift */,
+				8B88D5781BF352BE005CFAF5 /* Common.swift */,
 			);
 			name = Tools;
 			path = Classes/Tools;
@@ -405,6 +411,8 @@
 				8B7DB7CC1BF0C6E800F79C30 /* VisitorView.swift in Sources */,
 				8BD3A5841BED8A68008CC6A5 /* DiscoverViewController.swift in Sources */,
 				8BF69D3C1BF2DB12000F269E /* TitleButton.swift in Sources */,
+				8B88D5791BF352BE005CFAF5 /* Common.swift in Sources */,
+				8B88D57B1BF353B4005CFAF5 /* PopoverAnimationManager.swift in Sources */,
 				8BF683631BF05E000028BF19 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

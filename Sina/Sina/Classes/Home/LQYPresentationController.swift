@@ -9,6 +9,9 @@
 import UIKit
 
 class LQYPresentationController: UIPresentationController {
+    
+    /** 记录菜单的尺寸 */
+    var presentedFrame = CGRectZero
 
     /** 布局被弹出的控制器 */
     override func containerViewWillLayoutSubviews() {
@@ -21,7 +24,7 @@ class LQYPresentationController: UIPresentationController {
         cover.frame = containerView!.bounds
         
         // 2.修改被展现控件的尺寸
-        presentedView()?.frame = CGRect(x: 100, y: 56, width: 200, height: 200)
+        presentedView()?.frame = presentedFrame
     }
     
     // MARK: - 懒加载
