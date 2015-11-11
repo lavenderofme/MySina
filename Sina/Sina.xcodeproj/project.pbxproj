@@ -13,7 +13,6 @@
 		8B7827F81BEC637500A0C827 /* SinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7827F71BEC637500A0C827 /* SinaUITests.swift */; };
 		8B7DB7CC1BF0C6E800F79C30 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DB7CB1BF0C6E800F79C30 /* VisitorView.swift */; settings = {ASSET_TAGS = (); }; };
 		8B7DB7CE1BF0C70500F79C30 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DB7CD1BF0C70500F79C30 /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8B7DB7D21BF0C73A00F79C30 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B7DB7D11BF0C73A00F79C30 /* VisitorView.xib */; settings = {ASSET_TAGS = (); }; };
 		8B95DE441BF06CDE00CFB748 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A57C1BED8A1F008CC6A5 /*  MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BD3A57E1BED8A37008CC6A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -28,6 +27,8 @@
 		8BD3A5951BEDAF68008CC6A5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3A5941BEDAF68008CC6A5 /* Profile.storyboard */; settings = {ASSET_TAGS = (); }; };
 		8BF683631BF05E000028BF19 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF683621BF05E000028BF19 /* NullViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8BF683671BF05FF00028BF19 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF683661BF05FF00028BF19 /* Null.storyboard */; settings = {ASSET_TAGS = (); }; };
+		8BF69D381BF2D064000F269E /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF69D371BF2D064000F269E /* VisitorView.xib */; settings = {ASSET_TAGS = (); }; };
+		8BF69D3A1BF2D530000F269E /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF69D391BF2D530000F269E /* UIBarButtonItem+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,6 @@
 		8B7827F91BEC637500A0C827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B7DB7CB1BF0C6E800F79C30 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		8B7DB7CD1BF0C70500F79C30 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		8B7DB7D11BF0C73A00F79C30 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VisitorView.xib; path = ../../../VisitorView.xib; sourceTree = "<group>"; };
 		8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "../Main/UIButton+Extension.swift"; sourceTree = "<group>"; };
 		8BD3A57B1BED8A1F008CC6A5 /*  MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " MainViewController.swift"; sourceTree = "<group>"; };
 		8BD3A57D1BED8A37008CC6A5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 		8BD3A5941BEDAF68008CC6A5 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
 		8BF683621BF05E000028BF19 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		8BF683661BF05FF00028BF19 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
+		8BF69D371BF2D064000F269E /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		8BF69D391BF2D530000F269E /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8B95DE431BF06CDE00CFB748 /* UIButton+Extension.swift */,
+				8BF69D391BF2D530000F269E /* UIBarButtonItem+Extension.swift */,
 			);
 			name = Tools;
 			path = Classes/Tools;
@@ -199,7 +202,7 @@
 				8BD3A58C1BEDACF2008CC6A5 /* Main.storyboard */,
 				8B7DB7CD1BF0C70500F79C30 /* BaseViewController.swift */,
 				8B7DB7CB1BF0C6E800F79C30 /* VisitorView.swift */,
-				8B7DB7D11BF0C73A00F79C30 /* VisitorView.xib */,
+				8BF69D371BF2D064000F269E /* VisitorView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -343,7 +346,7 @@
 				8BD3A58F1BEDAF2C008CC6A5 /* Home.storyboard in Resources */,
 				8BD3A5951BEDAF68008CC6A5 /* Profile.storyboard in Resources */,
 				8BD3A5931BEDAF58008CC6A5 /* Discover.storyboard in Resources */,
-				8B7DB7D21BF0C73A00F79C30 /* VisitorView.xib in Resources */,
+				8BF69D381BF2D064000F269E /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +376,7 @@
 				8B7827D81BEC637500A0C827 /* AppDelegate.swift in Sources */,
 				8BD3A5821BED8A5E008CC6A5 /* MessageViewController.swift in Sources */,
 				8BD3A57C1BED8A1F008CC6A5 /*  MainViewController.swift in Sources */,
+				8BF69D3A1BF2D530000F269E /* UIBarButtonItem+Extension.swift in Sources */,
 				8B7DB7CE1BF0C70500F79C30 /* BaseViewController.swift in Sources */,
 				8B95DE441BF06CDE00CFB748 /* UIButton+Extension.swift in Sources */,
 				8B7DB7CC1BF0C6E800F79C30 /* VisitorView.swift in Sources */,

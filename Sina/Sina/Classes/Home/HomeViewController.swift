@@ -18,7 +18,19 @@ class HomeViewController: BaseViewController {
             visitorView?.setupVisitorInfo(nil, title: "")
             return
         }
-
+        
+        // 添加导航栏上的按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(imageNamed: "navigationbar_friendattention", target: self, action: Selector("leftBtnClick"))
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(imageNamed: "navigationbar_pop", target: self, action: Selector("rightBtnClick"))
+    }
+    
+    @objc func leftBtnClick()
+    {
+        LQYLog("")
+    }
+    @objc func rightBtnClick()
+    {
+        LQYLog("")
     }
 
 }
