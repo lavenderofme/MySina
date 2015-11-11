@@ -26,6 +26,7 @@ class HomeViewController: BaseViewController {
         
     }
     
+    // MARK: - 内部控制方法
     /** 初始化导航条 */
     private func setupNav()
     {
@@ -51,8 +52,35 @@ class HomeViewController: BaseViewController {
 
     @objc func titleButton(button:UIButton)
     {
-        // 切换按钮的状态
+        // 1.切换按钮的状态
         button.selected = !button.selected
-        LQYLog("")
+        
+        // 2.创建菜单
+        let sb = UIStoryboard(name: "PopoverViewController", bundle: nil)
+        let popoverVc = sb.instantiateInitialViewController()!
+        
+        // 2.1设置转场的代理
+        popoverVc.transitioningDelegate = self
+        
+        // 2.2设置转场样式
+        popoverVc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // 3.显示菜单
+        self.presentViewController(popoverVc, animated: true, completion: nil)
     }
+}
+
+// MARK: -UIViewControllerTransitioning代理方法
+extension HomeViewController: UIViewControllerTransitioningDelegate
+{
+    /*
+    该方法用于告诉系统谁来负责自定义转场
+    第一个参数: 被展现的控制
+    第二个参数: 发起的控制器
+    */
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+        
+        return LQYPresentationController(presentedViewController: presented, presentingViewController: presenting)
+    }
+    
 }
